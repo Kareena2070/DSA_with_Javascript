@@ -37,7 +37,7 @@ function findGreaterNumber(number1, number2) {
         return number2;
     }
 }
-findGreaterNumber(5,7)
+findGreaterNumber(5,7);
 console.log(findGreaterNumber(5,7));
 
 // Write a program to take three numbers from the user and print the greater number of the three numbers. (Assume all three numbers are distinct)
@@ -58,6 +58,38 @@ function findGreatestNumber(num1, num2, num3) {
         }
     }
 }
-findGreatestNumber(20,3,43)
+findGreatestNumber(20,3,43);
 
 console.log(findGreatestNumber(20,3,43));
+
+
+// Comparing numbers is essential in programming. This challenge strengthens your JavaScript skills by teaching you how to determine the greatest number from user input using conditional statements.
+
+function findGreatestNumber(num1, num2, num3, num4) {
+    //    change code below this line
+    let max
+    let large
+
+    if (num1 > num2) {
+        max = num1;
+    } else {
+        max = num2;
+    }
+
+     if (num3 > num4) {
+         large = num3;
+     } else {
+         large = num4;
+     }
+
+     if (max > large) {
+         return max;
+     } else {
+         return large;
+     }
+
+}
+
+
+findGreatestNumber(98, 13, 29, 58);
+console.log(findGreatestNumber(98, 13, 29, 58));
