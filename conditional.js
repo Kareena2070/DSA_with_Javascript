@@ -26,3 +26,38 @@ function daysInAnYear(year) {
    }
 
    console.log(daysInAnYear(2023));
+
+//    Challenge : This challenge will test your JavaScript skills! Write a program that asks the user for two numbers. Then, use conditional statements to figure out which number is bigger.
+
+function findGreaterNumber(number1, number2) {
+    // Only change code below this line
+    if(number1 > number2) {
+        return number1;
+    } else {
+        return number2;
+    }
+}
+findGreaterNumber(5,7)
+console.log(findGreaterNumber(5,7));
+
+// Write a program to take three numbers from the user and print the greater number of the three numbers. (Assume all three numbers are distinct)
+
+function findGreatestNumber(num1, num2, num3) {
+    //  Only change code below this line
+    if (num1 > num2){
+        if(num1>num3) {
+            return num1;
+        } else {
+            return num3;
+        }
+    } else {
+        if (num2 >  num3) {
+            return num2;
+        } else {
+            return num3;
+        }
+    }
+}
+findGreatestNumber(20,3,43)
+
+console.log(findGreatestNumber(20,3,43));
