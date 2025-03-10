@@ -19,4 +19,4 @@ function countDigits(number) {
       return sum;
    }
    
-   console.log(countDigits(45698));
+   console.log(countDigits(0));
