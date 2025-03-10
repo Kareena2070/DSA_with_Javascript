@@ -12,8 +12,7 @@ function oddEvenSum(arr) {
     let sumOfEven = 0;
     let sumOfOdd = 0;
 
-      for(let i =0; i <arr.length; i++){
-            // arr[i]= i;
+      for(let i =0; i <arr.length; i++){       // the .length method tells us how many elements are in the array.
     
           if(arr[i]%2==0){
             sumOfEven += arr[i]
@@ -30,5 +29,7 @@ function oddEvenSum(arr) {
     const result = oddEvenSum(inputArray);
     console.log(result[0]);
     console.log(result[1]);
-
     
+
+
+ 
