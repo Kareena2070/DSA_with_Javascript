@@ -75,7 +75,7 @@ function numTri(n){
     }
 }
 
-numTri(4);
+numTri(5);
 
 // output  1
 //         12
