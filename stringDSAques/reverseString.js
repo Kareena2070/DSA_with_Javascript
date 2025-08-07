@@ -47,6 +47,33 @@ reverseString2(UserName)
 // so space complexity  = O(n)
 
 
+function reverseString3(str){
+    let charArray = [];
+
+    // Loop from end to start
+    for (let i = str.length - 1; i >= 0; i--) {
+        charArray.push(str[i]);
+    }
+
+    // Convert array back to string
+    let newString = charArray.join("");
+
+    console.log(newString);
+}
+reverseString3(UserName)
+
+// time complexity
+// Operation	   Complexity
+// Looping	         O(n)
+// push()	         O(1) per op → total O(n)
+// join("")	         O(n)
+
+// Total Space Complexity: O(n)
+
+// this is now just as efficient as split + reverse + join, but it's manual — perfect for interviews.
+
+
+
 
 
 
