@@ -20,3 +20,33 @@ reverseString1(UserName)
 // so, total space complexity = O(n)
 
 
+
+function reverseString2(str){
+    let newArray = "";
+    for(let i = str.length-1; i>=0;i--){
+        newArray+=str[i]
+    }
+    console.log(newArray)
+}
+
+reverseString2(UserName)
+
+// time complexity
+// Loop runs n times → O(n)
+// Each += on a string creates a new string in memory every time (because JS strings are immutable).
+// So internally, it can behave like O(n²) in worst-case scenarios — especially for long strings.
+//  Total Time Complexity:
+// O(n²) (because string concatenation in loop = repeated memory copying)
+// space complexity
+// newString is built character-by-character.
+// JS strings are immutable, so each += creates a new copy in memory.
+// Even though you are using just one variable (newString), JS makes intermediate copies every time you += → but 
+// those copies are discarded by the garbage collector.
+// Technically, it's O(n) space for the final result.
+// But practically, there is extra memory churn due to repeated copying.
+// so space complexity  = O(n)
+
+
+
+
+
